@@ -14,6 +14,7 @@ import Logic.Logica;
 import javax.swing.DropMode;
 import java.awt.Font;
 import java.awt.TextField;
+import java.awt.Color;
 
 public class Main extends JFrame {
 
@@ -70,7 +71,9 @@ public class Main extends JFrame {
 		contentPane.setLayout(null);
 
 		textField = new JTextField();
-		textField.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		textField.setBackground(Color.WHITE);
+		textField.setEditable(false);
+		textField.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		textField.setBounds(12, 13, 408, 96);
 		contentPane.add(textField);
 		textField.setColumns(10);
